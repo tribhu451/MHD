@@ -10,7 +10,7 @@ LIBS          = $(SYSLIBS) $(GSLLIBS)
 vpath %.cpp src
 objdir     = obj
 
-SRC        = main.cpp cell.cpp grid.cpp init.cpp 
+SRC        = main.cpp cell.cpp grid.cpp init.cpp eos.cpp 
              
 OBJS       = $(patsubst %.cpp,$(objdir)/%.o,$(SRC)) 
               

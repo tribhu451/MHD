@@ -10,14 +10,24 @@ class cell
 {
   
   private:
-  double U[4];    // conserved quantities //  
-                  // tau*T^00, tau*T^01, tau*T^02, tau*tau*T^03 // 
+
+  // conserved quantities // 
+  // T^00, T^01, T^02, T^03 //  
+  double U[4];
+
+  // 3-Components of electric field at cell centre
+  double E[3] ; 
+
+  // 3-Components of magnetic field at cell centre
+  double B[3] ;               
   
+
   public:
 
   cell();
   ~cell();
   void set_U( double , double , double , double );
+  void set_U( double*  );
   void get_U( double*  );
 
 };
