@@ -1,7 +1,7 @@
 #pragma once
 #include<iostream>
 #include<cmath>
-
+#include "eos.h"
 
 
 using namespace std;
@@ -29,6 +29,7 @@ class cell
   void set_U( double , double , double , double );
   void set_U( double*  );
   void get_U( double*  );
+  void get_physical_variables(eos*, double &eps, double* u[4]);
 
 };
 

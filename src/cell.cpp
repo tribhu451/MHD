@@ -41,6 +41,34 @@ void cell::get_U( double* xx ){
 }
 
 
+void cell::get_physical_variables(eos* e, double &eps, double* u[4]){
+  //U[4], E[4], B[4] ;
+  //double T = e->get_temperature(epsilon,nb,nq,ns);
+  //double P = e->get_pressure(epsilon,nb,nq,ns);
+  //...
+  //...
+  //...
+
+  //eps = xx  ;
+  //u[0] =5 ; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
